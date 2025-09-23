@@ -6,7 +6,7 @@ const Counter1 = () => {
   const [count, setCount] = useState(0);
   const dispatch = useDispatch();
 
-  const counter = useSelector((state) => state.counter);
+  const counter = useSelector((state) => state.counter.value);
 
   const handleIncrementRedux = () => {
     dispatch(increment());
@@ -28,7 +28,7 @@ const Counter1 = () => {
             {count} - {counter}
           </h1>
         </div>
-        <div className="space-x-10">
+        <div>
           <div>
             <button
               type="button"
