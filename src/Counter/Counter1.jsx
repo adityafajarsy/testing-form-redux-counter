@@ -6,7 +6,7 @@ const Counter1 = () => {
   const [count, setCount] = useState(0);
   const dispatch = useDispatch();
 
-  const counter = useSelector((state) => state.counter.value);
+  const counter = useSelector((state) => state.counter);
 
   const handleIncrementRedux = () => {
     dispatch(increment());
