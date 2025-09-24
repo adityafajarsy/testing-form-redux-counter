@@ -20,6 +20,7 @@ const Counter2 = () => {
     <div>
       <div className="flex items-center justify-center flex-col border p-3 rounded bg-gray-300">
         <div>
+          <h1>Menambah Header</h1>
           <h1 className="font-black text-5xl mb-10">
             {count} - {counter}
           </h1>
